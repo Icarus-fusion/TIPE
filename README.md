@@ -163,3 +163,7 @@ python Traitement_des_donnees.py
 | Score (console) | Coefficient de détermination R² de la régression (proche de 1 si la croissance est linéaire) |
 | `puissance(a, V)` (console) | Puissance de fusion extrapolée (W) |
 | Graphique | Nombre de fusions en fonction du temps, avec la droite de régression |
+
+## Continuation
+
+Ce projet est continuié sous le nom [Solaris](https://github.com/Icarus-fusion/Solaris).
