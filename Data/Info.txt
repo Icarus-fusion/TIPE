@@ -1,0 +1,12 @@
+Dimension :
+
+Volume : 1e-17
+Petit r : 5.467257407887213e-07
+Grand R : 1.694849796445036e-06
+Mètre par pixel : 8.587947853951422e-09
+
+Paramètre :
+
+Température : 150000000.0
+Nombre de particule : 1000
+Taille d'un atome en pixel : 2.3288450675440179e-07

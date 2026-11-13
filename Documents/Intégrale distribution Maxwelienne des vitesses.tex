@@ -1,0 +1,91 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{scalerel,amssymb}
+\usepackage{mathrsfs}
+\usepackage{fancyhdr}
+\usepackage{bbm}
+\usepackage{pgfplots}
+\usepackage[hidelinks]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\pgfplotsset{compat=1.18}
+\allowdisplaybreaks
+
+\hypersetup{colorlinks=false, linktoc=all}
+
+\newcommand{\dint}[1]{\text{ d}#1}
+\newcommand{\toinf}[1]{\underset{#1\to+\infty}{\longrightarrow}}
+\DeclareMathOperator{\e}{\mathrm{e}}
+\DeclareMathOperator{\simp}{\underset{+\infty}{\sim}}
+\DeclareMathOperator{\R}{\mathbb{R}}
+\DeclareMathOperator{\N}{\mathbb{N}}
+\DeclareMathOperator{\n}{n\in\N}
+
+\begin{document}
+
+\noindent On cherche à cacluler l'intégrale suivante :
+\[ I = \int_0^{+\infty}\sqrt{\frac{2}{\pi}}\left(\frac{m}{k_BT}\right)^\frac{3}{2}v^2\mathrm{e}^{-\frac{mv^2}{2k_BT}}\dint{v} \]
+Pour cela, on pose $\displaystyle a=\sqrt{\frac{2}{\pi}}\left(\frac{m}{k_BT}\right)^\frac{3}{2}$ et $\displaystyle b=\frac{m}{2k_BT}$. On obtient donc :
+\[ I = a\int_0^{+\infty}v^2\e^{-bv^2}\dint{v} \]
+On pose pour $\n^*,\ f_n:\begin{array}[t]{rcl}
+    \R&\to&\R\\x&\mapsto&\left(1+\frac{bx^2}{n}\right)^{-n}
+\end{array}$ continue par morceaux sur $\R$. \\
+La suite $(f_n)$ converge simplement vers $f:x\mapsto\e^{-bx^2}$ continue par morceaux sur $\R$. \\
+D'après la formule du binôme de Newton, pour tout $\n^*$ et pour tout $x\in\R_+$
+\begin{align*}
+    \left(1+\frac{bx^2}{n}\right)^n &= \sum_{n=0}^n\binom{n}{k}\frac{b^kx^{2k}}{n^k} \\
+    &\geqslant 1 + n\times\frac{bx^2}{n} \\
+    &= 1 + bx^2
+\end{align*}
+Donc $\displaystyle|f_n(x)|\leqslant\frac{1}{1+bx^2}$ et $\displaystyle x\mapsto\frac{1}{1+bx^2}\in L^1(\R_+)$ \\
+Donc d'après le théorème de convergence dominée :
+\[ \int_0^{+\infty}f_n\dint{x}\quad\toinf{n}\quad\int_0^{+\infty}\e^{-bx^2}\dint{x} \]
+Il reste à calculer l'intégrale de $f_n$ pour $\n^*$. \\
+Soit $\n^*$. \\
+On effectue le changement de variable $\displaystyle t=\frac{x\sqrt{b}}{\sqrt{n}}\ \left(\dint{t}=\frac{\sqrt{b}}{\sqrt{n}}\dint{x}\right)$
+\begin{align*}
+    \int_0^{+\infty}f_n(x)\dint{x} &= \int_0^{+\infty}(1+t^2)^{-n}\frac{\sqrt{n}}{\sqrt{b}}\dint{t} \\
+    &= \sqrt{\frac{n}{b}}\int_0^{+\infty}\frac{1}{(1+t^2)^n}\dint{t}
+\end{align*}
+On effectue le changement de variable $\displaystyle u=\arctan(t)\ \left(\dint{u}=\frac{1}{1+t^2}\dint{t}\right)$. Donc
+\begin{align*}
+    \sqrt{\frac{n}{b}}\int_0^{+\infty}\frac{1}{(1+t^2)^n}\dint{t} &= \sqrt{\frac{n}{b}}\int_0^{\frac{\pi}{2}}\frac{1}{(1+\tan^2(u))^{n-1}}\dint{u} \\
+    &= \sqrt{\frac{n}{b}}\int_0^{\frac{\pi}{2}}\cos^{2(n-1)}\dint{u} \\
+    &= \sqrt{\frac{n}{b}}W_{2(n-1)}
+\end{align*}
+On reconnait les intégrales de Wallis. \\
+On a donc $W_{n}\simp\sqrt{\frac{\pi}{2n}}$ \\
+Donc
+\begin{align*}
+    \sqrt{\frac{n}{b}}W_{2(n-1)}&\simp\sqrt{\frac{n}{b}}\sqrt{\frac{\pi}{4n-4}} \\
+    &\simp \frac{\sqrt{\pi}}{2\sqrt{b}}
+\end{align*}
+Finalement,
+\[ \int_0^{+\infty}f_n(x)\dint{x}\simp\frac{\sqrt{\pi}}{2\sqrt{b}} \]
+Donc
+\[ \int_0^{+\infty}\e^{-bx^2}\dint{x} = \frac{\sqrt{\pi}}{2\sqrt{b}} \]
+D'où
+\[ \int_0^{+\infty}a\e^{-bx^2}\dint{x} = \frac{a\sqrt{\pi}}{2\sqrt{b}} \tag{1} \]
+On pose, pour $x\in\R_+$ et $b\in\R,\ g:(x,b)\mapsto a\e^{-bx^2}$. \\
+Pour tout $x\in\R_+,\ g:b\mapsto\e^{-bx^2}$ est continue et dérivable sur $\R$. \\
+Pour tout $b\in\R,\ g:x\mapsto\e^{-bx^2}$ est continue par morceaux sur $\R_+$ \\
+Pour tout $x\in\R_+,\ \displaystyle\frac{\partial f}{\partial b}(x, b) = -ax^2\e^{-bx^2}$ continue par morceaux sur $\R$. \\
+Donc, d'après (1) :
+\[ I = \int_0^{+\infty}ax^2\e^{-bx^2} = \frac{a}{b\sqrt{b}}\times\frac{\sqrt{\pi}}{4} \]
+Or $\displaystyle a=\sqrt{\frac{2}{\pi}}\left(\frac{m}{k_BT}\right)^\frac{3}{2}$ et $\displaystyle b=\frac{m}{2k_BT}$. Donc
+\begin{align*}
+    \frac{a}{b\sqrt{b}} &= \frac{\sqrt{\frac{2}{\pi}}\left(\frac{m}{k_BT}\right)^\frac{3}{2}}{\frac{m}{2k_BT}\sqrt{\frac{m}{2k_BT}}} \\
+    &= \frac{\sqrt{\frac{2}{\pi}}m^{\frac{3}{2}}(2k_BT)^{\frac{3}{2}}}{(k_BT)^{\frac{3}{2}}m\sqrt{m}} \\
+    &= \frac{4}{\sqrt{\pi}}
+\end{align*}
+D'où
+\[ \boxed{I = 1} \]
+
+\end{document}

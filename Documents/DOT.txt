@@ -1,0 +1,15 @@
+Mi-Avril 2025 : Début des recherches concernant les différentes simulations existantes.
+
+Fin Avril 2025 : Choix d'une simulation proche de la mécanique suite à la découverte de la limite classique.
+
+Mai 2025 : Premier modèle à l'aide du module tkinter qui n'a pas abouti pour des raisons de complexité.
+
+Octobre 2025 : Réduction de la complexité du modèle permettant ainsi les simulations sur mon ordinateur personnel.
+
+Decembre 2026 : Conférence au sujet d'ITER organisée par mon ancien lycée, qui m'a permis de rentrer en contact avec Aurélien Rousseau, ingénieur chez F4E.
+
+Début Mai 2026 : Visite du centre de recherche de F4E à Barcelone suite aux échanges avec Aurélien Rousseau concernant.
+
+Mi-Mai 2026 : Abandon de tkinter pour simuler le réacteur impliquant une réduction drastique de la complexité.
+
+Fin Mai 2026 : Validation des résultats obtenus grâce aux simulations de la part des ingénieurs numériques de F4E par rapport aux hypothèses prises en compte.

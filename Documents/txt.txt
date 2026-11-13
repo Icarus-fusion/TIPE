@@ -1,0 +1,31 @@
+Quelle est l'énergie générer par la fusion nucléaire en fonction de la température et de la densité ?
+
+Gaz ionisé, plasma donc pas d'électrons, particule seul
+On suppose autant d'atome de deutèrium et que d'atome de tritium
+Bord sans fin, rentre à droite et sort à gauche, rentre en haut sort et sort en bas
+Répuslion entre les particules, force électrostatique répuslive
+Section efficace dépend de l'énergie de la particule
+Si contacte des sections efficaces alors fusion
+En cas de fusion, calcule de l'énergie avec différence de masse
+Disparition des atomes d'hélium et des neutrons qui sont produits de fusion
+Gestion de la densité ( = nombre de particule) ainsi que de la température
+Gaz parfait ? pour la pression ?
+
+
+
+Pour le code :
+
+On note n le nombre de particule
+Donc n_d = n/2 particule de deutèrium et n_t = n/2 particule de tritium
+On note T la température
+On note de v_1 à v_n les vitesses des particules selon une distribution maxwellienne (fonction python existe pour ça)
+Génération des angles avec générateur aléatoire python
+
+
+
+Esthétique :
+
+Couleur pour les particules :
+	Deteurium = rouge
+	Tritium = bleu
+	Cross section = vert

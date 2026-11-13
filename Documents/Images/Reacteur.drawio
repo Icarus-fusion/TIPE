@@ -1,0 +1,51 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="r8s2rVNq6N18vZJyTcsg">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hL5YVVKuzGo_6uG8QkZe-3" edge="1" parent="1" source="hL5YVVKuzGo_6uG8QkZe-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hL5YVVKuzGo_6uG8QkZe-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hL5YVVKuzGo_6uG8QkZe-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Initialisation" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="hL5YVVKuzGo_6uG8QkZe-5" edge="1" parent="1" source="hL5YVVKuzGo_6uG8QkZe-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hL5YVVKuzGo_6uG8QkZe-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hL5YVVKuzGo_6uG8QkZe-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Insertion et création de N particules" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="hL5YVVKuzGo_6uG8QkZe-7" edge="1" parent="1" source="hL5YVVKuzGo_6uG8QkZe-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hL5YVVKuzGo_6uG8QkZe-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hL5YVVKuzGo_6uG8QkZe-4" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Calcul des vitesses initiales" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="hL5YVVKuzGo_6uG8QkZe-6" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" value="Envoi des&lt;br&gt;vitesses initiales&lt;br&gt;aux particules" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="hL5YVVKuzGo_6uG8QkZe-10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hL5YVVKuzGo_6uG8QkZe-9" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="430" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hL5YVVKuzGo_6uG8QkZe-12" edge="1" parent="1" source="hL5YVVKuzGo_6uG8QkZe-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hL5YVVKuzGo_6uG8QkZe-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hL5YVVKuzGo_6uG8QkZe-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Calcul de vitesse initial" vertex="1">
+          <mxGeometry height="60" width="120" x="570" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="hL5YVVKuzGo_6uG8QkZe-11" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" value="Envoi de&lt;br&gt;vitesse initial" vertex="1">
+          <mxGeometry height="60" width="120" x="570" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="hL5YVVKuzGo_6uG8QkZe-14" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" value="Création d&#39;une&lt;br&gt;nouvelle particule" vertex="1">
+          <mxGeometry height="60" width="120" x="570" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="hL5YVVKuzGo_6uG8QkZe-15" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Reacteur&lt;/h1&gt;&lt;p&gt;Diagramme de la classe Reacteur&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="150" y="370" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

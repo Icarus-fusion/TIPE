@@ -1,0 +1,53 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{scalerel,amssymb}
+\usepackage{mathrsfs}
+\usepackage{fancyhdr}
+\usepackage[version=4]{mhchem}
+\usepackage{tabularx}
+
+\begin{document}
+
+Calvao-Theveniault Thomas
+\medskip
+\begin{center}
+    \Large{\textbf{L'énergie des étoiles : la fusion nucléaire}}
+\end{center}
+\medskip
+
+L'envie de travailler sur la fusion nucléaire me vient de la découverte du projet ITER il y a quelques années. C'est d'ailleurs sur les données de ce réacteur en construction que nous allons nous appuyer durant l'étude. \bigskip
+
+Nous allons donc étudier la faisabilité des réactions de fusion et l'entretien continu de ces dernières. Pour cela, j'appuierai mes arguments à l'aide d'une simulation python dont je détaillerai le modèle.
+
+\section*{Problématique}
+
+Quelles sont les conditions nécessaires au maintien continu d'une réaction de fusion nucléaire dans un environnement confiné ?
+
+\section*{Objectifs du TIPe}
+
+\begin{description}
+    \item[\underline{Création du modèle :}] Je vais justifier la pertinence du modèle utilisé pour l'étude des réactions de fusion tout en rappelant les contraintes physiques et matérielles liées au réacteur.
+    \item[\underline{Déterminer la validité du modèle :}] A l'aide d'un programme python, je vais pouvoir simuler une réaction de fusion nucléaire dans les conditions du réacteurs ITER. Cela me permettra d'obtenir plusieurs courbes
+    \item[\underline{Comparaison avec des données réelles :}] Une fois la simulation effectuée, je comparerai les résultats obtenus avec les attentes du projet ITER. Ne possédant aucun résultat expérimental, 
+\end{description}
+
+\section*{Bibliographie commentée}
+
+"Nous rêvons parfois que l'homme saura un jour comment la libérer et l'utiliser pour ses propres besoins" - Arthur Eddington. C'est avec ces mots qu'Arthur Eddington qualifia pour la toute première fois l'énergie qui alimente les étoiles en 1920, la fusion nucléaire. Cela fait donc plus d'un siècle que les chercheurs rêvent de pouvoir un jour dompter l'énergie des étoiles. Les recherches sur la maîtrise de cette énergie ont grandement avancé ces vingt dernières années, premièrement avec le lancement en 2007 du projet ITER (International Thermonuclear Reactor) \textbf{[1]} financé à 45 \% par l'Union européenne, ou encore plus récemment le 12 février 2025 lorsque le réacteur WEST (Tungsten Environment in Steadystate Tokamak) a maintenu un plasma durant 22 minutes, un record mondial en termes de durée. \\
+Le but premier des réacteurs à fusion nucléaire est de fournir une énergie propre et pilotable. Pour cela, il est nécessaire d'atteindre le critère de Lawson \textbf{[2]}, le fait que le plasma libère plus d'énergie que celle que nous lui injectons. Cependant, nous n'avons pas encore atteint ce critère, c'est d'ailleurs l'objectif premier d'ITER, montrer que ce critère est atteignable et que la fusion est une source d'énergie viable industriellement. Il existe plusieurs méthodes connues pour exploiter la fusion nucléaire, le confinement inertiel et le confinement magnétique. ITER est un Tokamak, il utilise donc la deuxième méthode de confinement pour le plasma \textbf{[1]}. Afin de vérifier qu'ITER respectera ce critère, de nombreuses simulations ont été faites. La quasi-totalité d'entre elles se base sur la mécanique des fluides et la thermodynamique. Jusqu'à présent, les simulations effectuées par F4E (Fusion For Energy) annoncent que le critère de Lawson sera atteint \textbf{[1]}. Le réacteur ITER étant en cours de construction, la simulation est le seul moyen d'effectuer des expériences sur le réacteur. De plus, le cœur du réacteur étant hostile à tout type de mesure, il est important de déterminer un maximum de paramètres pouvant affecter la réaction. \\
+De mon côté, j'ai choisi une approche totalement différente pour simuler l'intérieur du réacteur. En effet, le plasma atteint une température de 150 millions de degrés. À cette température, le critère de dégénérescence est atteint \textbf{[3]}. On peut alors considérer les atomes comme des billes solides, suivant la seconde loi de Newton, et non des ondes suivant les lois de la physique quantique. On quitte donc en partie la physique quantique pour la physique dite classique. Je vais considérer le plasma comme un gaz où les particules se repoussent. Cependant, la fusion de deux particules reste un effet quantique, il est donc nécessaire de se pencher sur cette réaction, cœur du réacteur. Il faudra donc prendre en compte la section efficace de la réaction, conséquence de l'effet tunnel, un phénomène quantique.
+
+\section*{Références bibliographiques}
+
+\begin{itemize}
+    \item[\textbf{[1]}] \textit{https://www.iter.org/fr}
+    \item[\textbf{[2]}] Jean-Louis Bobin : La Fusion Thermonucléaire Contrôlée, EDP Sciences, 2011
+    \item[\textbf{[3]}] Éric Suraud : Physique des collisions nucléaires, Hermann, 1998
+\end{itemize}
+
+\end{document}

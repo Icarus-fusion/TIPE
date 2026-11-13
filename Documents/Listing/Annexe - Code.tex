@@ -1,0 +1,83 @@
+\documentclass[titlepage]{article}
+
+\usepackage{graphicx}
+\usepackage[a4paper]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{listings}
+\usepackage{bookmark}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{scalerel}
+\usepackage{mathrsfs}
+\usepackage{fancyhdr}
+\usepackage{bbm}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{comment}
+\usepackage{tabularx}
+
+\definecolor{myyellow}{RGB}{255,195,50}
+\definecolor{mygray}{RGB}{228,228,228}
+\definecolor{mygreen}{RGB}{96,153,68}
+
+\lstset{
+    language=Python,
+    basicstyle=\small\ttfamily,
+    keywordstyle=\color{blue},
+    commentstyle=\color{mygreen},
+    stringstyle=\color{orange},
+    numbers=left,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single
+    inputencoding=utf8,
+    extendedchars=true,
+    literate=
+        {é}{{\'e}}1 {è}{{\`e}}1 {ê}{{\^e}}1 {ë}{{\"e}}1
+        {à}{{\`a}}1 {â}{{\^a}}1 {ä}{{\"a}}1
+        {ù}{{\`u}}1 {û}{{\^u}}1 {ü}{{\"u}}1
+        {î}{{\^i}}1 {ï}{{\"i}}1
+        {ô}{{\^o}}1 {ö}{{\"o}}1 {ò}{{\`o}}1
+        {ç}{{\c{c}}}1
+        {É}{{\'E}}1 {È}{{\`E}}1 {Ê}{{\^E}}1
+        {À}{{\`A}}1 {Â}{{\^A}}1
+        {Ù}{{\`U}}1 {Û}{{\^U}}1
+        {Î}{{\^I}}1
+        {Ô}{{\^O}}1
+        {Ç}{{\c{C}}}1
+        {°}{{\textdegree}}1
+        {~}{{\textasciitilde}}1
+}
+
+\begin{document}
+
+\pagestyle{fancy}
+\fancyfoot[C]{}
+\fancyfoot[R]{Page {\thepage} sur \pageref{end}}
+\fancyhead[R]{2025 - 2026}
+\fancyhead[L]{Calvao Thomas}
+
+\begin{titlepage}
+    {\title{{\Huge L'énergie des étoiles : La fusion nucléaire} \\ Annexes}}
+    \author{Calvao--Théveniault Thomas}
+    \date{2025-2026}
+    \maketitle
+\end{titlepage}
+
+\section{Modélisation}
+
+\lstinputlisting{/home/thomas/Documents/Cours/TIPe/Code/V20.py}
+
+\section{Traitement des données}
+
+\lstinputlisting{/home/thomas/Documents/Cours/TIPe/Code/Traitement des donnees.py}
+
+\section{Tracer de courbe}
+
+\lstinputlisting{/home/thomas/Documents/Cours/TIPe/Code/graph.py}
+
+\label{end}
+
+\end{document}
