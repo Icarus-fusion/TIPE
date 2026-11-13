@@ -176,7 +176,7 @@ class Particule:
 
         vy = integration(temps, Day[self.id])
         self.vy += vy
-        Dvy[self.id].append(self.vx)
+        Dvy[self.id].append(self.vy)
 
         self.v = math.sqrt(self.vx**2 + self.vy**2)
 
@@ -248,7 +248,7 @@ class Reacteur:
                     p2.theta = theta2
                     p2.v = v2
                     p2.vx = p2.v * math.cos(theta2)
-                    p2.vy = p2.v - math.sin(theta2)
+                    p2.vy = p2.v * math.sin(theta2)
     
     #Cette fonction permet la simulation
     def animation(self):
